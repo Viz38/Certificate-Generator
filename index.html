@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dream-Skill Certificate Generator</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/dreamskill.png" type="image/x-icon">
+    <script type="text/javascript" async="" src="js/index.js"></script>
+    <script type="text/javascript" async="" src="js/cookies.js"></script>
+    <script type="text/javascript" async="" src="https://printathpi.quelltext.eu/printathpi.js"></script>
+  </head>
+  <body>
+
+    <div id="headerDiv" class="text-center">
+      <h1 id="header">Dream-Skill Certificate Generator</h1>
+    </div>
+
+    <div id="infoDiv">
+       <p id="infoText">Fill out the input boxes below to create your very own certificate!</p>
+    </div>
+
+    <div id="left-side">
+      <div class="variables">
+        <div class="variable">
+          <p>Certificate Header:</p><input type="text" id="text-cert" class="update" value placeholder="Certificate of Achievement" />
+         </div>
+        <div class="variable">
+            <p>Name:</p><input type="text" id="text-name" class="update" value placeholder="John Doe"/>
+        </div>
+        <div class="variable">
+            <p>(Expandable) Text:</p><textarea id="text-achieve" class="update"></textarea>
+        </div>
+        <div class="variable">
+          <p>Diploma:</p><input type="text" id="text-diploma" class="update" value placeholder="DIPLOMA" />
+        </div>
+        <div class="variable">
+          <p>Champion:</p><input type="text" id="text-champion" class="update" value placeholder="Alice Mentor" />
+        </div>
+        <div class="variable">
+          <p>Big Logo:
+            <a class="image-choice" href="javascript:changeText('logo-big', 'dreamskill.png')"><img src="img/dreamskill.png"/></a>
+            <a class="image-choice" href="javascript:changeText('logo-big', 'LOGO.png')"><img src="img/LOGO.png"/></a>
+          </p>
+          <input type="text" id="logo-big" class="update" value placeholder="http://image.com/mylogo.svg" />
+        </div>
+        <div class="variable">
+          <p>Logo in Medal:
+            <a class="image-choice" href="javascript:changeText('logo-small', 'Scratchcat2.png')"><img src="img/Scratchcat2.png"/></a>
+            <a class="image-choice" href="javascript:changeText('logo-small', 'dreamskill.png')"><img src="img/dreamskill.png"/></a>
+          </p>
+          <input type="text" id="logo-small" class="update" value http="placeholder://image.com/logo-small.svg" />
+        </div>
+      </div>
+    </div>
+
+    <div id="right-side">
+      <div class="result">
+          <a href="#" id="save-link">Save Settings</a>
+          <label>Print:</label><a class="preview-link" src="img/certificate.svg" target="_blank">A4 landscape Print</a>
+          <iframe width="100%" src="img/certificate.svg" scrolling="no" id="preview"></iframe>
+      </div>
+    </div>
+
+  </body>
+</html>
